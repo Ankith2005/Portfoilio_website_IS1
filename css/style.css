@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#1f2937;
+    line-height:1.7;
+
+    background:linear-gradient(
+        135deg,
+        #f8f9ff,
+        #eef2ff,
+        #dbeafe
+    );
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title h2{
+
+    font-size:2.4rem;
+    color:#2563eb;
+    font-weight:700;
+    position:relative;
+    display:inline-block;
+
+}
+
+.section-title h2::after{
+
+    content:"";
+    width:70%;
+    height:4px;
+
+    background:#2563eb;
+
+    position:absolute;
+
+    left:15%;
+    bottom:-10px;
+
+    border-radius:10px;
+
+}
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.85);
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.navbar{
+
+    width:90%;
+    height:75px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.logo span{
+
+    color:#2563eb;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:28px;
+
+}
+
+.nav-links a{
+
+    color:#374151;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
+
+.nav-links a.active{
+
+    color:#2563eb;
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    font-size:1.7rem;
+
+    cursor:pointer;
+
+}
+
+.home{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.home-content{
+
+    max-width:850px;
+
+}
+
+.profile-img{
+
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #2563eb;
+    margin:0 auto 30px;
+    display:block;
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+    transition:all .4s ease;
+    cursor:pointer;
+
+}
+
+.profile-img:hover{
+
+    transform:scale(1.15);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.45);
+
+}
+
+.home h3{
+
+    font-size:1.3rem;
+
+    color:#64748b;
+
+    margin-bottom:8px;
+
+}
+
+.home h1{
+
+    font-size:4rem;
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+
+}
+
+.home h2{
+
+    font-size:1.6rem;
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+
+}
+
+.home p{
+
+    font-size:1.05rem;
+
+    color:#475569;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.about-content{
+
+    max-width:900px;
+    margin:auto;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    border:1px solid #dbeafe;
+
+}
+
+.about-content p{
+
+    color:#475569;
+
+    text-align:justify;
+
+    margin-bottom:20px;
+
+}
+
+.about-content h3{
+
+    color:#2563eb;
+
+    margin:25px 0 15px;
+
+}
+
+.interest-list{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.interest-list span{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-size:.95rem;
+
+    transition:.3s;
+
+}
+
+.interest-list span:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-4px);
+
+}
+
+.skills-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.skill-card{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    border:1px solid #dbeafe;
+
+    transition:.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 30px rgba(37,99,235,.15);
+
+}
+
+.skill-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:18px;
+
+}
+
+.skill-card ul li{
+
+    margin:12px 0;
+
+    color:#475569;
+
+    position:relative;
+
+    padding-left:18px;
+
+}
+
+.skill-card ul li::before{
+
+    content:"✔";
+
+    color:#2563eb;
+
+    position:absolute;
+
+    left:0;
+
+}
+
+.education-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    border:1px solid #dbeafe;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.education-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 30px rgba(37,99,235,.15);
+
+}
+
+.education-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.education-card p{
+
+    color:#475569;
+
+    margin:12px 0;
+
+}
+
+.projects-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #dbeafe;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(37,99,235,.15);
+
+}
+
+.project-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.project-card p{
+
+    color:#475569;
+
+    margin-bottom:18px;
+
+}
+
+.project-card span{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:.85rem;
+
+}
+
+.achievement-card{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #dbeafe;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+    transition:.3s;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(37,99,235,.15);
+
+}
+
+.achievement-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.achievement-card li{
+
+    margin:12px 0;
+
+    color:#475569;
+
+}
+
+.contact-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:20px;
+
+}
+
+.contact-icons a{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    border:2px solid #2563eb;
+
+    color:#2563eb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.contact-icons a:hover{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.25);
+
+}
+
+footer{
+
+    margin-top:60px;
+
+    background:#ffffff;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-top:1px solid #dbeafe;
+
+}
+
+footer p{
+
+    color:#64748b;
+
+    font-size:.95rem;
+
+}
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef2ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1d4ed8;
+
+}
+

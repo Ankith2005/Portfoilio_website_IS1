@@ -1,0 +1,125 @@
+@media (max-width: 1200px) {
+
+    section {
+        padding: 80px 8%;
+    }
+
+    .home h1 {
+        font-size: 3.4rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .home {
+        min-height: 70vh;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home h2 {
+        font-size: 1.4rem;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .home {
+        min-height: 60vh;
+        padding-top: 120px;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .home h2 {
+        font-size: 1.2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-icons {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home h2 {
+        font-size: 1rem;
+    }
+
+    .home p {
+        font-size: .95rem;
+    }
+
+    .about-content,
+    .skill-card,
+    .project-card,
+    .education-card,
+    .achievement-card {
+        padding: 25px;
+    }
+
+    .contact-icons a {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+}
